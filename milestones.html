@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestones | PathwayIQ</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <a href="index.html#home" class="logo">PathwayIQ</a>
+        <div class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#domain">Domain</a>
+            <a href="index.html#milestones">Milestones</a>
+            <a href="index.html#documents">Documents</a>
+            <a href="index.html#presentations">Presentations</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#contact">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <h1>Milestones</h1>
+        <p>A timeline of our project assessments, including dates and marks allocated.</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <div style="text-align: center;">
+            <h2 class="section-title">Project Milestones</h2>
+            <p style="margin-bottom: 30px;">Select a milestone from the drop-down menu below to view its details, date, and marks allocated.</p>
+        </div>
+
+        <!-- Drop-down Menu Container -->
+        <div style="max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            
+            <label for="milestoneSelect" style="font-weight: bold; display: block; margin-bottom: 10px; color: #0A5C99;">Select Assessment:</label>
+            
+            <select id="milestoneSelect" onchange="showDetails()" style="width: 100%; padding: 12px; border: 2px solid #E0F2FE; border-radius: 4px; font-size: 1rem; color: #1F2937; outline: none; cursor: pointer;">
+                <option value="">-- Choose a Milestone --</option>
+                <option value="proposal">Proposal Presentation & Report</option>
+                <option value="progress1">Progress Presentation I</option>
+                <option value="progress2">Progress Presentation II</option>
+                <option value="finalViva">Final Presentation and VIVA</option>
+                <option value="finalReport">Final Report</option>
+                <option value="researchPaper">Research Paper (published)</option>
+                <option value="website">Website</option>
+                <option value="logbook">Research logbook, Status document 1 & 2</option>
+            </select>
+
+            <!-- Details will appear here -->
+            <div id="detailsBox" class="details-box" style="margin-top: 20px; padding: 20px; background-color: #f8fafc; border-left: 4px solid #3498DB; border-radius: 8px; display: none;">
+                <h3 id="detailTitle" style="color: #0A5C99; margin-bottom: 10px;"></h3>
+                <p id="detailDate" style="margin-bottom: 5px;"><strong>Date:</strong> </p>
+                <p id="detailMarks" style="margin-bottom: 5px;"><strong>Marks Allocated:</strong> </p>
+                <p id="detailDesc"></p>
+                <div id="detailLinks" class="milestone-quick-links" style="display: none;"></div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 PathwayIQ Research Project. All rights reserved.</p>
+        <p>Developed for Academic Purposes.</p>
+    </footer>
+
+    <!-- JAVASCRIPT LINK -->
+    <script src="Js/script.js"></script>
+
+</body>
+</html>
